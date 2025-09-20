@@ -8,7 +8,7 @@ from scispacy.linking import EntityLinker
 from sentence_transformers import SentenceTransformer
 
 # === Setup Paths ===
-base_path = "/project/perl/mk985/ishala_backup/correct_gpu_ishala/umlsProject"
+base_path = "."
 input_dir_cncpt = os.path.join(base_path, "concept_input_500")
 output_dir = os.path.join(base_path, "outputs")
 input_dir_eval = os.path.join(base_path, "evaluation_input_15")
@@ -119,3 +119,4 @@ for fname in os.listdir(input_dir_eval):
             f_prompt.write("\n".join(prompt_lines))
 
         print(f"? Prompt written for {fname}")
+
